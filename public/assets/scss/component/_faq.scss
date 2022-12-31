@@ -1,0 +1,131 @@
+@use "../abstract" as *;
+
+.gm-faq.gm-faq-2column {
+	.accordion {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 50px;
+		row-gap: 20px;
+		> div {
+			width: calc((100% - 50px) / 2);
+			@media #{$md,$sm,$xs} {
+				width: calc((100% - 0px) / 1);
+			}
+		}
+	}
+}
+.gm-faq {
+	.accordion-button {
+		border: 2px solid var(--clr-theme-1);
+		border-radius: 30px;
+		padding: 0 28px;
+		height: 60px;
+		font-size: 18px;
+		font-weight: 700;
+		color: var(--clr-theme-1);
+		text-transform: uppercase;
+		font-family: "Poppins", sans-serif;
+		padding-right: 8px;
+		justify-content: space-between;
+		box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+		text-align: left;
+		background: var(--clr-common-white);
+		@media #{$sm,$xs}{
+			font-weight: 600;
+		}
+		@media #{$lg,$xxs} {
+			padding: 0 18px;
+			font-size: 16px;
+			font-weight: 600;
+			padding-right: 8px;
+		}
+		&::after {
+			content: "\f067";
+			background-image: none;
+			font-family: "Font Awesome 5 Pro";
+			font-size: 18px;
+			font-weight: 400;
+			height: 40px;
+			width: 40px;
+			border: 2px solid var(--clr-theme-1);
+			line-height: 36px;
+			border-radius: 50%;
+			margin-left: 0;
+			text-align: center;
+		}
+		&:not(.collapsed) {
+			background-color: var(--clr-theme-1);
+			color: var(--clr-common-white);
+			box-shadow: none;
+			&::after {
+				border-color: var(--clr-common-white);
+				background: var(--clr-common-white);
+				color: var(--clr-theme-1);
+				content: "\f068";
+			}
+		}
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	.accordion-body {
+		font-size: 18px;
+		line-height: 28px;
+		padding: 24px 9px 5px 30px;
+		@media #{$lg,$xxs} {
+			font-size: 16px;
+			padding: 24px 9px 5px 20px;
+		}
+	}
+	.accordion-collapse {
+		border: none;
+	}
+	.accordion-item {
+		border: none;
+		background: none;
+		&:first-of-type {
+			.accordion-button {
+				border-radius: 30px;
+			}
+		}
+		&:last-of-type {
+			.accordion-button.collapsed {
+				border-width: 2px;
+				border-radius: 30px;
+			}
+		}
+	}
+}
+.gm-faq-group {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+// faq-2 style
+.faq-area.style-2 {
+	background: var(--clr-theme-3);
+}
+
+.faq-thumb {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 160px;
+	height: 160px;
+	background: var(--clr-common-white);
+	text-align: center;
+	line-height: 160px;
+	border-radius: 550%;
+	@media #{$xxs} {
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+}
+.faq-img {
+	position: relative;
+	max-width: 580px;
+}
+.faq-img img {
+	max-width: 100%;
+}

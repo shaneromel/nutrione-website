@@ -1,0 +1,319 @@
+@use "../abstract" as *;
+
+// contact form style
+.single-input-field {
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+	input {
+		border: 2px solid var(--clr-theme-1);
+		border-radius: 10px;
+		height: 60px;
+		padding: 0 22px;
+		padding-right: 44px;
+		width: 100%;
+		outline: 0;
+		&::placeholder {
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #bebebe;
+		}
+	}
+	textarea {
+		height: 180px;
+		width: 100%;
+		padding: 14px 22px;
+		padding-right: 44px;
+		border: 2px solid var(--clr-theme-1);
+		border-radius: 10px;
+		outline: 0;
+		resize: none;
+		&::placeholder {
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #bebebe;
+		}
+	}
+	&::after {
+		content: "\f007";
+		position: absolute;
+		right: 24px;
+		top: 16px;
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 700;
+		font-size: 14px;
+		color: var(--clr-theme-1);
+	}
+}
+.contact-form {
+	.contact-btn {
+		margin-top: 10px;
+	}
+}
+.single-input-field.field-email {
+	&::after {
+		content: "\f0e0";
+	}
+}
+.single-input-field.field-message {
+	&::after {
+		content: "\f040";
+	}
+}
+.single-input-field.field-website {
+	&::after {
+		content: "\f0ac";
+	}
+}
+.single-input-field.field-number {
+	&::after {
+		content: "\f095";
+	}
+}
+.single-input-field.field-address {
+	&::after {
+		content: "\f279";
+	}
+}
+.single-input-field.field-service {
+	&::after {
+		content: "\f175";
+	}
+}
+
+.contact-form .row {
+	--bs-gutter-x: 25px;
+}
+
+// contact-rapper style
+.contact-area {
+	position: relative;
+	margin-bottom: -105px;
+	z-index: 2;
+}
+.contact-wrapper {
+	box-shadow: -30px 0px 60px 0px rgba(0, 0, 0, 0.06);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	@media #{$md,$sm,$xs} {
+		box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.06);
+	}
+}
+.contact-wrapper-content {
+	padding: 90px 100px 100px;
+	width: 64%;
+	background: var(--clr-common-white);
+	@media #{$lg} {
+		padding: 60px 70px 70px;
+	}
+	@media #{$md} {
+		padding: 60px 70px 70px;
+		width: 100%;
+	}
+	@media #{$sm} {
+		padding: 30px 30px 40px;
+		width: 100%;
+	}
+	@media #{$xs} {
+		padding: 30px 30px 40px;
+		width: 100%;
+	}
+	@media #{$xxs} {
+		padding: 20px 20px 30px;
+	}
+}
+.contact-wrapper-img {
+	width: 36%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	@media #{$md,$sm,$xs} {
+		position: static;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+// contact info area style
+
+.contact-info-area {
+	position: relative;
+	padding-top: 220px;
+	padding-bottom: 120px;
+	background: var(--clr-theme-3);
+	margin-top: -105px;
+	z-index: 2;
+}
+.contact-info-shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	@media #{$sm,$xs} {
+		display: none;
+	}
+	.contact-img-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.contact-area {
+	position: relative;
+	margin-bottom: -105px;
+	z-index: 3;
+}
+.contact-map {
+	iframe {
+		width: 100%;
+		height: 100%;
+		min-height: 290px;
+		display: block;
+	}
+	margin-right: -30px;
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+	@media #{$md,$sm,$xs} {
+		margin-right: 0;
+		border-radius: 10px 10px 0 0;
+	}
+}
+.contact-info-title {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 17px;
+}
+.info-contact-time {
+	.info-date {
+		font-size: 16px;
+		font-weight: 700;
+		color: var(--clr-common-white);
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+		@media #{$lg,$xxs} {
+			font-size: 15px;
+		}
+	}
+	li {
+		border-bottom: 1px solid #1a5440;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+	}
+}
+.info-item-wrapper.info-wrapper-media {
+	border-radius: 0 10px 10px 0;
+	@media #{$md,$sm,$xs} {
+		border-radius: 0 0 10px 10px;
+	}
+}
+.info-item-wrapper.info-wrapper-time {
+	background: var(--clr-theme-1);
+	@media #{$md,$sm,$xs} {
+		margin-top: 30px;
+	}
+	&::before {
+		content: url("../../img/icon/clock-icon.png");
+		filter: grayscale(0) opacity(1);
+	}
+}
+.info-wrapper-time {
+	.contact-info-title {
+		color: var(--clr-common-white);
+	}
+}
+.info-item-wrapper {
+	background: var(--clr-common-white);
+	border-radius: 10px;
+	padding: 43px 50px 50px;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	@media #{$lg,$xxs} {
+		padding: 24px 30px 30px;
+	}
+	@media #{$md,$sm,$xs} {
+		height: auto;
+	}
+	@media #{$xxs} {
+		padding: 24px 20px 30px;
+	}
+	&::before {
+		position: absolute;
+		content: url("../../img/icon/calender-icon.png");
+		top: 20px;
+		right: 20px;
+		z-index: -1;
+		filter: grayscale(100%) opacity(0.05);
+	}
+}
+.info-contact {
+	.single-contact {
+		p {
+			font-size: 16px;
+			font-weight: 700;
+			color: var(--clr-theme-1);
+			text-transform: uppercase;
+			@media #{$lg,$xxs} {
+				font-size: 15px;
+			}
+		}
+		.contact-icon {
+			color: var(--clr-theme-2);
+		}
+	}
+	li {
+		border-bottom: 1px solid #ece9e3;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+		&:last-child {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+}
+
+// contact-info-area style-2 style
+.style-2 {
+	&.contact-info-area {
+		margin-top: 0;
+		padding-top: 120px;
+		overflow: hidden;
+	}
+	.contact-info-shape {
+		.contact-img-1 {
+			position: absolute;
+			top: 0;
+			left: auto;
+			right: 0;
+			@media #{$xl} {
+				width: 350px;
+			}
+			@media #{$lg,$md} {
+				width: 300px;
+			}
+		}
+		.contact-img-2 {
+			position: absolute;
+			left: 0;
+			bottom: -280px;
+			@media #{$xl} {
+				width: 200px;
+			}
+			@media #{$lg,$md} {
+				width: 200px;
+			}
+		}
+	}
+}

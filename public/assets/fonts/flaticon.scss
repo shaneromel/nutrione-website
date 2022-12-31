@@ -1,0 +1,397 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a35b764c852bcb3e87982ed7c3b04228") format("truetype"),
+url("./flaticon.woff?a35b764c852bcb3e87982ed7c3b04228") format("woff"),
+url("./flaticon.woff2?a35b764c852bcb3e87982ed7c3b04228") format("woff2"),
+url("./flaticon.eot?a35b764c852bcb3e87982ed7c3b04228#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a35b764c852bcb3e87982ed7c3b04228#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "phone-call": "\f101",
+    "envelope": "\f102",
+    "time": "\f103",
+    "facebook": "\f104",
+    "twitter": "\f105",
+    "youtube": "\f106",
+    "telegram": "\f107",
+    "instagram": "\f108",
+    "plus": "\f109",
+    "remove": "\f10a",
+    "shopping-basket": "\f10b",
+    "barn": "\f10c",
+    "gardening": "\f10d",
+    "gardening-1": "\f10e",
+    "house": "\f10f",
+    "farming-and-gardening": "\f110",
+    "tree": "\f111",
+    "flower-with-rounded-petals": "\f112",
+    "flower": "\f113",
+    "lavender": "\f114",
+    "flowers": "\f115",
+    "rose": "\f116",
+    "flower-1": "\f117",
+    "flowers-1": "\f118",
+    "flower-2": "\f119",
+    "potted-plant": "\f11a",
+    "right-arrow": "\f11b",
+    "left-arrow": "\f11c",
+    "close": "\f11d",
+    "gardener": "\f11e",
+    "gardener-1": "\f11f",
+    "seeding": "\f120",
+    "forest": "\f121",
+    "trees": "\f122",
+    "star": "\f123",
+    "star-1": "\f124",
+    "quote": "\f125",
+    "grass": "\f126",
+    "grass-1": "\f127",
+    "lawn-mower": "\f128",
+    "maps-and-flags": "\f129",
+    "map": "\f12a",
+    "alarm-clock": "\f12b",
+    "telephone": "\f12c",
+    "garden": "\f12d",
+    "growth": "\f12e",
+    "garden-1": "\f12f",
+    "gardening-2": "\f130",
+    "eye": "\f131",
+    "user": "\f132",
+    "envelope-1": "\f133",
+    "right-arrow-angle": "\f134",
+    "down-arrow": "\f135",
+    "up-arrow": "\f136",
+    "left-arrow-1": "\f137",
+    "diagonal-arrow": "\f138",
+    "conversation-mark": "\f139",
+    "play-button-arrowhead": "\f13a",
+    "home": "\f13b",
+    "working": "\f13c",
+    "seeds": "\f13d",
+    "farmer": "\f13e",
+    "compare": "\f13f",
+    "view": "\f140",
+    "shopping-cart": "\f141",
+    "heart": "\f142",
+    "heart-1": "\f143",
+    "appointment": "\f144",
+    "clock": "\f145",
+    "bubble-chat": "\f146",
+    "wallet-filled-money-tool": "\f147",
+    "box": "\f148",
+    "location-pin": "\f149",
+    "target": "\f14a",
+    "mission": "\f14b",
+    "pie-chart": "\f14c",
+    "palm": "\f14d",
+    "butterfly": "\f14e",
+    "trophy": "\f14f",
+    "tick": "\f150",
+    "pdf": "\f151",
+    "pdf-1": "\f152",
+    "pdf-2": "\f153",
+    "download": "\f154",
+    "dots-menu": "\f155",
+    "calendar": "\f156",
+    "arrow-right": "\f157",
+    "left-arrow-2": "\f158",
+    "reply": "\f159",
+    "bookmark": "\f15a",
+    "pencil": "\f15b",
+    "global": "\f15c",
+    "search-interface-symbol": "\f15d",
+);
+
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-time:before {
+    content: map-get($flaticon-map, "time");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
+.flaticon-telegram:before {
+    content: map-get($flaticon-map, "telegram");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-remove:before {
+    content: map-get($flaticon-map, "remove");
+}
+.flaticon-shopping-basket:before {
+    content: map-get($flaticon-map, "shopping-basket");
+}
+.flaticon-barn:before {
+    content: map-get($flaticon-map, "barn");
+}
+.flaticon-gardening:before {
+    content: map-get($flaticon-map, "gardening");
+}
+.flaticon-gardening-1:before {
+    content: map-get($flaticon-map, "gardening-1");
+}
+.flaticon-house:before {
+    content: map-get($flaticon-map, "house");
+}
+.flaticon-farming-and-gardening:before {
+    content: map-get($flaticon-map, "farming-and-gardening");
+}
+.flaticon-tree:before {
+    content: map-get($flaticon-map, "tree");
+}
+.flaticon-flower-with-rounded-petals:before {
+    content: map-get($flaticon-map, "flower-with-rounded-petals");
+}
+.flaticon-flower:before {
+    content: map-get($flaticon-map, "flower");
+}
+.flaticon-lavender:before {
+    content: map-get($flaticon-map, "lavender");
+}
+.flaticon-flowers:before {
+    content: map-get($flaticon-map, "flowers");
+}
+.flaticon-rose:before {
+    content: map-get($flaticon-map, "rose");
+}
+.flaticon-flower-1:before {
+    content: map-get($flaticon-map, "flower-1");
+}
+.flaticon-flowers-1:before {
+    content: map-get($flaticon-map, "flowers-1");
+}
+.flaticon-flower-2:before {
+    content: map-get($flaticon-map, "flower-2");
+}
+.flaticon-potted-plant:before {
+    content: map-get($flaticon-map, "potted-plant");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-close:before {
+    content: map-get($flaticon-map, "close");
+}
+.flaticon-gardener:before {
+    content: map-get($flaticon-map, "gardener");
+}
+.flaticon-gardener-1:before {
+    content: map-get($flaticon-map, "gardener-1");
+}
+.flaticon-seeding:before {
+    content: map-get($flaticon-map, "seeding");
+}
+.flaticon-forest:before {
+    content: map-get($flaticon-map, "forest");
+}
+.flaticon-trees:before {
+    content: map-get($flaticon-map, "trees");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon-map, "star-1");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-grass:before {
+    content: map-get($flaticon-map, "grass");
+}
+.flaticon-grass-1:before {
+    content: map-get($flaticon-map, "grass-1");
+}
+.flaticon-lawn-mower:before {
+    content: map-get($flaticon-map, "lawn-mower");
+}
+.flaticon-maps-and-flags:before {
+    content: map-get($flaticon-map, "maps-and-flags");
+}
+.flaticon-map:before {
+    content: map-get($flaticon-map, "map");
+}
+.flaticon-alarm-clock:before {
+    content: map-get($flaticon-map, "alarm-clock");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-garden:before {
+    content: map-get($flaticon-map, "garden");
+}
+.flaticon-growth:before {
+    content: map-get($flaticon-map, "growth");
+}
+.flaticon-garden-1:before {
+    content: map-get($flaticon-map, "garden-1");
+}
+.flaticon-gardening-2:before {
+    content: map-get($flaticon-map, "gardening-2");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-envelope-1:before {
+    content: map-get($flaticon-map, "envelope-1");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon-map, "up-arrow");
+}
+.flaticon-left-arrow-1:before {
+    content: map-get($flaticon-map, "left-arrow-1");
+}
+.flaticon-diagonal-arrow:before {
+    content: map-get($flaticon-map, "diagonal-arrow");
+}
+.flaticon-conversation-mark:before {
+    content: map-get($flaticon-map, "conversation-mark");
+}
+.flaticon-play-button-arrowhead:before {
+    content: map-get($flaticon-map, "play-button-arrowhead");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-working:before {
+    content: map-get($flaticon-map, "working");
+}
+.flaticon-seeds:before {
+    content: map-get($flaticon-map, "seeds");
+}
+.flaticon-farmer:before {
+    content: map-get($flaticon-map, "farmer");
+}
+.flaticon-compare:before {
+    content: map-get($flaticon-map, "compare");
+}
+.flaticon-view:before {
+    content: map-get($flaticon-map, "view");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-heart-1:before {
+    content: map-get($flaticon-map, "heart-1");
+}
+.flaticon-appointment:before {
+    content: map-get($flaticon-map, "appointment");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-bubble-chat:before {
+    content: map-get($flaticon-map, "bubble-chat");
+}
+.flaticon-wallet-filled-money-tool:before {
+    content: map-get($flaticon-map, "wallet-filled-money-tool");
+}
+.flaticon-box:before {
+    content: map-get($flaticon-map, "box");
+}
+.flaticon-location-pin:before {
+    content: map-get($flaticon-map, "location-pin");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-mission:before {
+    content: map-get($flaticon-map, "mission");
+}
+.flaticon-pie-chart:before {
+    content: map-get($flaticon-map, "pie-chart");
+}
+.flaticon-palm:before {
+    content: map-get($flaticon-map, "palm");
+}
+.flaticon-butterfly:before {
+    content: map-get($flaticon-map, "butterfly");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon-map, "trophy");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon-map, "tick");
+}
+.flaticon-pdf:before {
+    content: map-get($flaticon-map, "pdf");
+}
+.flaticon-pdf-1:before {
+    content: map-get($flaticon-map, "pdf-1");
+}
+.flaticon-pdf-2:before {
+    content: map-get($flaticon-map, "pdf-2");
+}
+.flaticon-download:before {
+    content: map-get($flaticon-map, "download");
+}
+.flaticon-dots-menu:before {
+    content: map-get($flaticon-map, "dots-menu");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-arrow-right:before {
+    content: map-get($flaticon-map, "arrow-right");
+}
+.flaticon-left-arrow-2:before {
+    content: map-get($flaticon-map, "left-arrow-2");
+}
+.flaticon-reply:before {
+    content: map-get($flaticon-map, "reply");
+}
+.flaticon-bookmark:before {
+    content: map-get($flaticon-map, "bookmark");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-global:before {
+    content: map-get($flaticon-map, "global");
+}
+.flaticon-search-interface-symbol:before {
+    content: map-get($flaticon-map, "search-interface-symbol");
+}

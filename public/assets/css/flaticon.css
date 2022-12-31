@@ -1,0 +1,305 @@
+@font-face {
+	font-family: "flaticon";
+	src: url("../fonts/flaticon.ttf?a35b764c852bcb3e87982ed7c3b04228")
+			format("truetype"),
+		url("../fonts/flaticon.woff?a35b764c852bcb3e87982ed7c3b04228")
+			format("woff"),
+		url("../fonts/flaticon.woff2?a35b764c852bcb3e87982ed7c3b04228")
+			format("woff2"),
+		url("../fonts/flaticon.eot?a35b764c852bcb3e87982ed7c3b04228#iefix")
+			format("embedded-opentype"),
+		url("../fonts/flaticon.svg?a35b764c852bcb3e87982ed7c3b04228#flaticon")
+			format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+	font-family: flaticon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone-call:before {
+	content: "\f101";
+}
+.flaticon-envelope:before {
+	content: "\f102";
+}
+.flaticon-time:before {
+	content: "\f103";
+}
+.flaticon-facebook:before {
+	content: "\f104";
+}
+.flaticon-twitter:before {
+	content: "\f105";
+}
+.flaticon-youtube:before {
+	content: "\f106";
+}
+.flaticon-telegram:before {
+	content: "\f107";
+}
+.flaticon-instagram:before {
+	content: "\f108";
+}
+.flaticon-plus:before {
+	content: "\f109";
+}
+.flaticon-remove:before {
+	content: "\f10a";
+}
+.flaticon-shopping-basket:before {
+	content: "\f10b";
+}
+.flaticon-barn:before {
+	content: "\f10c";
+}
+.flaticon-gardening:before {
+	content: "\f10d";
+}
+.flaticon-gardening-1:before {
+	content: "\f10e";
+}
+.flaticon-house:before {
+	content: "\f10f";
+}
+.flaticon-farming-and-gardening:before {
+	content: "\f110";
+}
+.flaticon-tree:before {
+	content: "\f111";
+}
+.flaticon-flower-with-rounded-petals:before {
+	content: "\f112";
+}
+.flaticon-flower:before {
+	content: "\f113";
+}
+.flaticon-lavender:before {
+	content: "\f114";
+}
+.flaticon-flowers:before {
+	content: "\f115";
+}
+.flaticon-rose:before {
+	content: "\f116";
+}
+.flaticon-flower-1:before {
+	content: "\f117";
+}
+.flaticon-flowers-1:before {
+	content: "\f118";
+}
+.flaticon-flower-2:before {
+	content: "\f119";
+}
+.flaticon-potted-plant:before {
+	content: "\f11a";
+}
+.flaticon-right-arrow:before {
+	content: "\f11b";
+}
+.flaticon-left-arrow:before {
+	content: "\f11c";
+}
+.flaticon-close:before {
+	content: "\f11d";
+}
+.flaticon-gardener:before {
+	content: "\f11e";
+}
+.flaticon-gardener-1:before {
+	content: "\f11f";
+}
+.flaticon-seeding:before {
+	content: "\f120";
+}
+.flaticon-forest:before {
+	content: "\f121";
+}
+.flaticon-trees:before {
+	content: "\f122";
+}
+.flaticon-star:before {
+	content: "\f123";
+}
+.flaticon-star-1:before {
+	content: "\f124";
+}
+.flaticon-quote:before {
+	content: "\f125";
+}
+.flaticon-grass:before {
+	content: "\f126";
+}
+.flaticon-grass-1:before {
+	content: "\f127";
+}
+.flaticon-lawn-mower:before {
+	content: "\f128";
+}
+.flaticon-maps-and-flags:before {
+	content: "\f129";
+}
+.flaticon-map:before {
+	content: "\f12a";
+}
+.flaticon-alarm-clock:before {
+	content: "\f12b";
+}
+.flaticon-telephone:before {
+	content: "\f12c";
+}
+.flaticon-garden:before {
+	content: "\f12d";
+}
+.flaticon-growth:before {
+	content: "\f12e";
+}
+.flaticon-garden-1:before {
+	content: "\f12f";
+}
+.flaticon-gardening-2:before {
+	content: "\f130";
+}
+.flaticon-eye:before {
+	content: "\f131";
+}
+.flaticon-user:before {
+	content: "\f132";
+}
+.flaticon-envelope-1:before {
+	content: "\f133";
+}
+.flaticon-right-arrow-angle:before {
+	content: "\f134";
+}
+.flaticon-down-arrow:before {
+	content: "\f135";
+}
+.flaticon-up-arrow:before {
+	content: "\f136";
+}
+.flaticon-left-arrow-1:before {
+	content: "\f137";
+}
+.flaticon-diagonal-arrow:before {
+	content: "\f138";
+}
+.flaticon-conversation-mark:before {
+	content: "\f139";
+}
+.flaticon-play-button-arrowhead:before {
+	content: "\f13a";
+}
+.flaticon-home:before {
+	content: "\f13b";
+}
+.flaticon-working:before {
+	content: "\f13c";
+}
+.flaticon-seeds:before {
+	content: "\f13d";
+}
+.flaticon-farmer:before {
+	content: "\f13e";
+}
+.flaticon-compare:before {
+	content: "\f13f";
+}
+.flaticon-view:before {
+	content: "\f140";
+}
+.flaticon-shopping-cart:before {
+	content: "\f141";
+}
+.flaticon-heart:before {
+	content: "\f142";
+}
+.flaticon-heart-1:before {
+	content: "\f143";
+}
+.flaticon-appointment:before {
+	content: "\f144";
+}
+.flaticon-clock:before {
+	content: "\f145";
+}
+.flaticon-bubble-chat:before {
+	content: "\f146";
+}
+.flaticon-wallet-filled-money-tool:before {
+	content: "\f147";
+}
+.flaticon-box:before {
+	content: "\f148";
+}
+.flaticon-location-pin:before {
+	content: "\f149";
+}
+.flaticon-target:before {
+	content: "\f14a";
+}
+.flaticon-mission:before {
+	content: "\f14b";
+}
+.flaticon-pie-chart:before {
+	content: "\f14c";
+}
+.flaticon-palm:before {
+	content: "\f14d";
+}
+.flaticon-butterfly:before {
+	content: "\f14e";
+}
+.flaticon-trophy:before {
+	content: "\f14f";
+}
+.flaticon-tick:before {
+	content: "\f150";
+}
+.flaticon-pdf:before {
+	content: "\f151";
+}
+.flaticon-pdf-1:before {
+	content: "\f152";
+}
+.flaticon-pdf-2:before {
+	content: "\f153";
+}
+.flaticon-download:before {
+	content: "\f154";
+}
+.flaticon-dots-menu:before {
+	content: "\f155";
+}
+.flaticon-calendar:before {
+	content: "\f156";
+}
+.flaticon-arrow-right:before {
+	content: "\f157";
+}
+.flaticon-left-arrow-2:before {
+	content: "\f158";
+}
+.flaticon-reply:before {
+	content: "\f159";
+}
+.flaticon-bookmark:before {
+	content: "\f15a";
+}
+.flaticon-pencil:before {
+	content: "\f15b";
+}
+.flaticon-global:before {
+	content: "\f15c";
+}
+.flaticon-search-interface-symbol:before {
+	content: "\f15d";
+}

@@ -1,0 +1,368 @@
+@use "../abstract" as *;
+
+.member-designation {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--clr-theme-2);
+	text-transform: uppercase;
+	line-height: 1;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.member-name {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	@media #{$xl,$sm} {
+		font-size: 20px;
+	}
+	a {
+		&:hover {
+			color: var(--clr-theme-2);
+		}
+	}
+}
+.social-links.team-social {
+	ul {
+		li {
+			a {
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				display: inline-block;
+				border: 2px solid var(--clr-theme-1);
+				line-height: 46px;
+				color: var(--clr-theme-1);
+				font-size: 16px;
+				border-radius: 6px;
+				background: var(--clr-common-white);
+				&:hover {
+					color: var(--clr-common-white);
+					background: var(--clr-theme-2);
+					border-color: var(--clr-theme-2);
+				}
+			}
+		}
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+	}
+}
+.team-single {
+	padding: 0 10px 30px 10px;
+	text-align: center;
+}
+.member-img {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	max-width: 220px;
+	margin-bottom: 25px;
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
+.hover-img-border {
+	.member-img {
+		a {
+			&:after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 100%;
+				border: 4px solid var(--clr-theme-1);
+				top: 0;
+				left: 0;
+				z-index: 2;
+				border-radius: 50%;
+				transform: scale(1.4);
+				background: transparent;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				border: 30px solid var(--clr-theme-3);
+				border-radius: 50%;
+				transform: scale(1.4);
+				background: transparent;
+			}
+			position: relative;
+			display: inline-block;
+		}
+	}
+	.team-single {
+		&:hover {
+			.member-img {
+				a {
+					&::after {
+						transform: scale(1);
+					}
+					&::before {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+}
+
+// team intro style
+
+.team-intro-area {
+	background: var(--clr-theme-1);
+	position: relative;
+}
+.team-intro-content {
+	.section-subtitle {
+		color: var(--clr-common-white);
+	}
+	.section-main-title {
+		color: var(--clr-common-white);
+	}
+}
+.team-intro-thumb {
+	position: absolute;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	top: 0;
+	@media #{$md,$sm,$xs} {
+		position: static;
+		width: 100%;
+
+		padding-bottom: 60px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.team-award-logo {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	flex-wrap: wrap;
+	@media #{$xxs} {
+		gap: 25px;
+	}
+}
+
+// team details style
+
+.team-detais-wrapper {
+	.member-img {
+		border-radius: 10px;
+		margin-bottom: 0;
+		width: 100%;
+		max-width: 520px;
+	}
+	.member-contact {
+		margin: -45px 30px 60px 30px;
+		background: var(--clr-theme-1);
+		position: relative;
+		border-radius: 10px;
+		padding: 30px 30px;
+		@media #{$xxs} {
+			margin: -45px 15px 60px 15px;
+			padding: 30px 15px;
+		}
+		li {
+			border-bottom: 1px solid #154b39;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			&:last-child {
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+}
+.member-contact {
+	.single-contact {
+		p {
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--clr-common-white);
+			text-transform: uppercase;
+			font-family: "Poppins", sans-serif;
+			@media #{$xl,$lg,$md,$sm,$xs} {
+				font-size: 18px;
+			}
+			@media #{$xxs} {
+				font-size: 16px;
+			}
+		}
+		.contact-icon {
+			font-size: 20px;
+			color: #558675;
+			min-width: 40px;
+			@media #{$xl} {
+				font-size: 18px;
+			}
+			@media #{$xxs} {
+				font-size: 16px;
+				min-width: 30px;
+			}
+		}
+	}
+}
+.team-details-content-wrapper {
+	padding-left: 70px;
+	padding-right: 45px;
+	@media #{$lg,$md,$sm,$xs} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.member-designation {
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.member-name {
+		font-size: 60px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		@media #{$xl} {
+			font-size: 52px;
+		}
+		@media #{$lg} {
+			font-size: 44px;
+		}
+		@media #{$md} {
+			font-size: 52px;
+		}
+		@media #{$sm} {
+			font-size: 42px;
+		}
+		@media #{$xs} {
+			font-size: 40px;
+		}
+		@media #{$xxs} {
+			font-size: 28px;
+		}
+	}
+}
+.section-widget-title {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.team-details-social {
+	.section-widget-title {
+		margin-bottom: 0;
+	}
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.hr-1 {
+	border-bottom: 1px solid #efefef;
+}
+.team-details-skill {
+	.bd-skill--content {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 45px;
+	}
+	.bd-skill__wrapper {
+		width: calc((100% - 45px) / 2);
+		@media #{$xxs} {
+			width: calc((100% - 0px) / 1);
+		}
+	}
+	.section-widget-title {
+		margin-bottom: 10px;
+	}
+}
+
+// bd-skill style
+.bd-skill--title__wrapper {
+	margin-bottom: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	& span {
+		color: var(--clr-body-heading);
+	}
+}
+.bd-skill--title {
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+}
+.bd-skill__wrapper {
+	overflow-x: clip;
+	.progress {
+		height: 6px;
+		border-radius: 10px;
+		overflow: inherit;
+		background-color: var(--clr-theme-3);
+		.progress-bar {
+			background: var(--clr-theme-2);
+			position: relative;
+			overflow: inherit;
+			border-radius: 10px;
+			span {
+				height: 22px;
+				width: 4px;
+				display: inline-block;
+				background: var(--clr-theme-1);
+				position: absolute;
+				transform: rotate(20deg);
+				right: -2px;
+				border-radius: 30px;
+				display: none;
+			}
+		}
+	}
+}
+.bd-skill--content {
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+.bd-skill--title__wrapper {
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.bd-skill--title__wrapper span {
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--clr-theme-2);
+	font-family: "Poppins", sans-serif;
+	line-height: 1;
+}
+
+// team-4 style
+.style-4 {
+	.social-links.team-social ul li a {
+		border: 2px solid var(--clr-common-white);
+		color: var(--clr-theme-1);
+		background: var(--clr-common-white);
+		&:hover {
+			color: var(--clr-common-white);
+			background-color: var(--clr-theme-2);
+			border-color: var(--clr-theme-2);
+		}
+	}
+}
+.style-4 {
+	&.team-area {
+		background: #f8f5f0;
+	}
+}

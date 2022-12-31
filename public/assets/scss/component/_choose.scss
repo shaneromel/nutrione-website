@@ -1,0 +1,89 @@
+@use "../abstract" as *;
+
+.choose-area {
+	position: relative;
+	z-index: 5;
+	background: var(--clr-theme-1);
+}
+.choose-bg {
+	position: absolute;
+	width: 64%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+	@media #{$md,$sm,$xs} {
+		position: static;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.choose-inner {
+	max-width: 670px;
+	background: var(--clr-common-white);
+	padding: 70px 80px 70px;
+	border-radius: 10px;
+	width: 100%;
+	@media #{$lg} {
+		padding: 50px 50px 50px;
+	}
+	@media #{$sm} {
+		padding: 50px 50px 50px;
+	}
+	@media #{$xxs} {
+		padding: 30px 20px 30px;
+	}
+	@media #{$xs} {
+		padding: 40px 30px 40px;
+	}
+}
+.choose-item {
+	.irc-item-content {
+		h4 {
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+			line-height: 1;
+			@media #{$lg} {
+				font-size: 20px;
+			}
+			@media #{$xxs} {
+				font-size: 20px;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.irc-item-icon {
+		width: 80px;
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		background: var(--clr-theme-1);
+		min-width: 80px;
+		border-radius: 50%;
+	}
+}
+.irc-item.choose-item {
+	display: flex;
+	gap: 24px;
+	@media #{$xxs} {
+		flex-direction: column;
+	}
+}
+.choose-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.choose-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}

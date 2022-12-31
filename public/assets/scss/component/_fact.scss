@@ -1,0 +1,93 @@
+@use "../abstract" as *;
+
+.fact-area {
+	position: relative;
+	z-index: 2;
+	padding-top: 215px;
+	padding-bottom: 60px;
+	overflow-x: clip;
+}
+.fact-area-bg {
+	background: var(--clr-theme-1);
+}
+.fact-title {
+	.section-subtitle {
+		color: #84a99c;
+	}
+	.section-main-title {
+		color: var(--clr-common-white);
+	}
+	font-weight: 700;
+	color: #84a99c;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 32px;
+	margin-top: -6px;
+}
+.fact-number {
+	font-size: 80px;
+	font-weight: 700;
+	color: var(--clr-common-white);
+	font-family: "Poppins", sans-serif;
+	display: block;
+	margin-bottom: 45px;
+	@media #{$lg} {
+		font-size: 70px;
+	}
+	@media #{$xxs} {
+		font-size: 60px;
+	}
+}
+.fact-single {
+	p {
+		color: #c5d8d1;
+		margin-bottom: 0;
+	}
+	text-align: center;
+	margin-bottom: 50px;
+}
+.fact-content {
+	padding: 0 0 0;
+	max-width: 260px;
+	margin: 0 auto;
+}
+.fact-icon {
+	margin-bottom: 15px;
+}
+.fact-batch {
+	position: absolute;
+	width: 190px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: -16px 0px 32px 0px rgba(0, 0, 0, 0.04);
+	border-radius: 50%;
+	img {
+		width: 100%;
+	}
+}
+.fact-plant-shape {
+	position: relative;
+}
+.fact-plant-shape {
+	&:before {
+		position: absolute;
+		content: url("../../img/shape/plant-shape.png");
+		bottom: -117.5px;
+		left: 0;
+		z-index: -1;
+		margin-left: -80px;
+		transform-origin: bottom;
+		animation: skew3deg 5s linear infinite;
+	}
+	&:after {
+		position: absolute;
+		content: url("../../img/shape/plant-shape-rotated.png");
+		bottom: -117.5px;
+		right: 0;
+		z-index: -1;
+		margin-right: -80px;
+		transform-origin: bottom;
+		animation: skew3deg 5s linear infinite 1s;
+	}
+}

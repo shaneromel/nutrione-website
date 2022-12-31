@@ -1,0 +1,50 @@
+@use "../abstract" as *;
+
+.video-area {
+	position: relative;
+	z-index: 5;
+	&:before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: var(--clr-theme-1);
+		opacity: 0.9;
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+}
+
+.video-content {
+	text-align: center;
+}
+.play-btn {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	background: var(--clr-common-white);
+	display: inline-block;
+	border-radius: 50%;
+	color: var(--clr-theme-1);
+	cursor: pointer;
+}
+
+// video-area-5 style
+.style-5 {
+	&.video-area::before {
+		display: none;
+	}
+	.video-wrapper {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	.video-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

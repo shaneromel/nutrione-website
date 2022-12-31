@@ -1,0 +1,128 @@
+@use "../abstract" as *;
+
+.page-title-area {
+	height: 500px;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+	max-width: 1800px;
+	margin-left: auto;
+	&::after {
+		// background-image: -moz-linear-gradient(
+		// 	0deg,
+		// 	rgb(0, 0, 0) 0%,
+		// 	rgba(0, 0, 0, 0) 100%
+		// );
+		// background-image: -webkit-linear-gradient(
+		// 	0deg,
+		// 	rgb(0, 0, 0) 0%,
+		// 	rgba(0, 0, 0, 0) 100%
+		// );
+		// background-image: -ms-linear-gradient(
+		// 	0deg,
+		// 	rgb(0, 0, 0) 0%,
+		// 	rgba(0, 0, 0, 0) 100%
+		// );
+		background-image: linear-gradient(90deg,rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0) 100%);
+		opacity: 0.6;
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+.page-title-wrapper {
+	padding-bottom: 65px;
+}
+.page-title-wrapper p {
+	font-weight: 700;
+	color: var(--clr-common-white);
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+.page-title {
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: var(--clr-common-white);
+	margin-bottom: 0;
+	@media #{$lg} {
+		font-size: 72px;
+	}
+	@media #{$md} {
+		font-size: 62px;
+	}
+	@media #{$sm} {
+		font-size: 46px;
+	}
+	@media #{$xs} {
+		font-size: 32px;
+	}
+}
+
+.breadcrumb-menu {
+	li {
+		span {
+			font-size: 16px;
+			font-weight: 700;
+			color: var(--clr-common-white);
+			text-transform: uppercase;
+		}
+		position: relative;
+		&:not(:last-child) {
+			&:after {
+				display: inline-block;
+				color: var(--clr-common-white);
+				content: "";
+				position: absolute;
+				right: -14px;
+				top: 0px;
+				font-family: "Font Awesome 5 Pro";
+				font-size: 14px;
+			}
+		}
+		&:last-child {
+			&:before {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 2px;
+				background: #789288;
+				left: 0;
+				bottom: 4px;
+			}
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		gap: 20px;
+	}
+}
+.breadcrumb-wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 27px 0;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		width: 100%;
+		width: 100%;
+		background: rgb(11, 61, 44);
+		opacity: 0.9;
+	}
+}

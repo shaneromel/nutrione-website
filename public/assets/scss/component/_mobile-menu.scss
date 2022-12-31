@@ -1,0 +1,70 @@
+@use "../abstract" as *;
+
+.mm-menu ul li.has-droupdown {
+    color: var(--clr-common-heading);
+    cursor: pointer;
+  }
+  .mm-menu ul li {
+    display: block;
+  }
+  .mm-menu ul li a {
+    padding: 12px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    font-size: 14px;
+    color: var(--clr-common-heading);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .mm-menu ul li.has-droupdown.active>a {
+    color: var(--clr-common-heading);
+  }
+  .mm-menu ul li.has-droupdown.active>a:after {
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  .mm-menu ul li.has-droupdown>a:after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    border-color: initial;
+    right: 2px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transform-origin: top;
+    transition: all .3s ease-out;
+  }
+  .mm-menu ul li.has-droupdown ul.sub-menu {
+    padding-left: 0;
+    list-style: none;
+    height: 0;
+  
+    &.active{
+        height: auto;
+    }
+  }
+  .mm-menu ul li.has-droupdown ul.sub-menu li {
+    padding-left: 15px;
+  }
+  .mm-menu ul li {
+    display: block;
+  }
+  .mm-menu ul li.has-droupdown.active ul.sub-menu.active li a {
+    height: 46px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .mm-menu ul li.has-droupdown ul.sub-menu li a {
+    position: relative;
+    padding: 0 0 0 15px;
+    text-transform: capitalize;
+    font-size: 13px;
+    height: 0;
+    line-height: 46px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+  }

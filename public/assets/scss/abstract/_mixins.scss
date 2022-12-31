@@ -1,0 +1,169 @@
+	//backgroud 
+    @mixin background($position: center,$size: cover,$repeat: no-repeat) {
+        background: {
+            position: $position;
+            repeat: $repeat;
+            size: $size;
+        }
+    }
+      
+    //transition
+    @mixin transition($time) {
+        -webkit-transition: all $time ease-out 0s;
+        -moz-transition: all $time ease-out 0s;
+        -ms-transition: all $time ease-out 0s;
+        -o-transition: all $time ease-out 0s;
+        transition: all $time ease-out 0s;
+    }
+    
+    // transform
+    @mixin transform($transforms) {
+        -webkit-transform: $transforms;
+        -moz-transform: $transforms;
+        -ms-transform: $transforms;
+        transform: $transforms;
+    }
+    
+    //border
+    @mixin border-radius($man) {
+    -webkit-border-radius: $man;
+    -moz-border-radius: $man;
+    border-radius: $man;
+    }
+    
+    // sentence case
+    @mixin sentence-case() {
+        text-transform: lowercase;
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    // Flexbox display
+    @mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    }
+    
+    // Box shadows
+    @mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;       
+            box-shadow: $shadow;
+    }
+    
+    //before-left-top
+    @mixin before-left-top($width, $height, $background, $left, $top) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            top: $top;
+        }	
+    }
+    
+    //before-left-bottom
+    @mixin before-left-bottom($width, $height, $background, $left, $bottom) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            bottom: $bottom;
+        }	
+    }
+    
+    //before-right-top
+    @mixin before-right-bottom($width, $height, $background, $right, $bottom) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            bottom: $bottom;
+        }	
+    }
+    
+    //before-right-bottom
+    @mixin before-right-top($width, $height, $background, $right, $top) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            top: $top;
+        }	
+    }
+    
+    //after-left-top
+    @mixin after-left-top($width, $height, $background, $left, $top) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            top: $top;
+        }	
+    }
+    
+    //after-left-bottom
+    @mixin after-left-bottom($width, $height, $background, $left, $bottom) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            bottom: $bottom;
+        }	
+    }
+    
+    //after-right-top
+    @mixin after-right-bottom($width, $height, $background, $right, $bottom) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            bottom: $bottom;
+        }	
+    }
+    
+    //after-right-bottom
+    @mixin after-right-top($width, $height, $background, $right, $top) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            top: $top;
+        }	
+    }
+    
