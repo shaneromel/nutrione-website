@@ -43,7 +43,7 @@ const HeaderTwo = () => {
                         <div className="meta-header-inner">
                             <div className="meta-header-left">
                                 <div className="header-logo header2-logo">
-                                    <Link href="/"><a className="logo-w"><img src="/assets/img/logo/logo-w.png" alt="logo-img" /></a></Link>
+                                    <Link href="/"><a className="logo-w"><img src="/assets/img/logo/logo1.svg" alt="logo-img" /></a></Link>
                                 </div>
                             </div>
                             <div className="meta-header-right">

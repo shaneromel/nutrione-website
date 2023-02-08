@@ -2,7 +2,7 @@ import React from 'react';
 import FooterOne from '../../layout/footers/footer';
 import HeaderOne from '../../layout/headers/header';
 import Breadcrumb from '../common/breadcrumb';
-import BlogSection from '../home/blog-section';
+import BlogSection from '../home/blog-section-five';
 import ServiceChooseSection from './service-choose-section';
 import ServicesSection from './services-section';
 

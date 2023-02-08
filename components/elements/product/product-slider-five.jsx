@@ -11,6 +11,7 @@ import { add_to_wishlist } from '../../../redux/features/wishlist-slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSingleProduct, selectProducts } from '../../../redux/features/product-slice';
 import ProductModal from '../../common/product-modal';
+import { handpickedProducts } from '../../../data/product-data';
 
 const ProductSliderFive = () => {
     const products = useSelector(selectProducts);
@@ -66,7 +67,7 @@ const ProductSliderFive = () => {
                                         }
                                     }}
                                 >
-                                    {productList.slice(15, 20).map((item, index) => {
+                                    {handpickedProducts.map((item, index) => {
                                         return (
                                             <SwiperSlide key={index}>
                                                 <div className="product-single style-2">

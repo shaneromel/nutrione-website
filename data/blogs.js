@@ -69,7 +69,7 @@ const blogItemsList = [
   // blog home two end
   {
     id:7,
-    img:'/assets/img/blog/blog-15.jpg',
+    img:'/assets/img/blog/maxresdefault (1).jpg',
     title:'As nouns the difference between planting',
     desc:'Most gardens consist of a mix of natural & constructed elements, although even very natural gardens are always.',
     metaBy:'by',

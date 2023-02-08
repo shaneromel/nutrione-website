@@ -10,7 +10,7 @@ const ServiceSectionFive = () => {
                <div className="col-lg-8 col-md-8">
                   <div className="section-title style-5 text-center">
                      <span className="section-subtitle">featured services</span>
-                     <h2 className="section-main-title mb-45">Gardeny offers</h2>
+                     <h2 className="section-main-title mb-45">Nutrione offers</h2>
                   </div>
                </div>
             </div>

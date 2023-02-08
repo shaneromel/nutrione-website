@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css/bundle';
-import productList from '../../../data/products';
+import { products as productList } from '../../../data/product-data';
 import { cart_product } from '../../../redux/features/cart-slice';
 import { useSelector, useDispatch } from "react-redux";
 import { getSingleProduct, selectProducts } from '../../../redux/features/product-slice';
@@ -44,7 +44,7 @@ const ProductSlider = () => {
                             }
                         }}
                     >
-                        {productList.slice(0, 10).map((item, index) => {
+                        {productList.map((item, index) => {
 
                             return (
                                 <SwiperSlide key={index}>

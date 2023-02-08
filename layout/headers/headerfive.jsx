@@ -42,7 +42,7 @@ const HeaderFive = () => {
                                 <div className="header-main-content-wrapper">
                                     <div className="header-main-left header-main-left-header5">
                                         <div className="header-logo header5-logo">
-                                            <Link href="/"><a className="logo-w"><img src="/assets/img/logo/gm-thumb-white.png" alt="logo-img" /></a></Link>
+                                            <Link href="/"><a className="logo-w"><img src="/assets/img/logo/logo1.svg" alt="logo-img" /></a></Link>
                                         </div>
                                     </div>
                                     <div className="header-main-right header-main-right-header5">

@@ -2,7 +2,7 @@ const nav_menus_list = [
   {
     link: '/',
     title: 'Home',
-    hasDropdown: true,
+    hasDropdown: false,
     megamenu: false,
     dropdownItems: [
       { link: '/', title: 'Home Style 01' },

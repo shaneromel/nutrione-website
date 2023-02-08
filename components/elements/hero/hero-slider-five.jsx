@@ -11,17 +11,17 @@ const HeroSliderFive = () => {
     const SliderItem = [
         {
             id: 1,
-            sliderBg: '/assets/img/banner/banner-5-1.png',
-            sliderSubtitle: 'start from $29',
-            sliderTitle: 'Jik Flower Scaping',
+            sliderBg: '/assets/img/banner/mushroom1.jpeg',
+            sliderSubtitle: 'Everyone is talking about mushrooms and the great benefits these little fungi can provide for our body and mind.',
+            sliderTitle: 'Products Made For Your Lifestyle',
             sliderbtn: 'request an estimate',
             sliderbtn1: 'our shop',
         },
         {
             id: 2,
-            sliderBg: '/assets/img/banner/banner-5-2.png',
-            sliderSubtitle: 'start from $28',
-            sliderTitle: 'k.i Flower plants',
+            sliderBg: '/assets/img/banner/mushroom2.jpeg',
+            sliderSubtitle: 'Everyone is talking about mushrooms and the great benefits these little fungi can provide for our body and mind.',
+            sliderTitle: 'Products Made For Your Lifestyle',
             sliderbtn: 'request an estimate',
             sliderbtn1: 'our shop',
         }
@@ -69,9 +69,9 @@ const HeroSliderFive = () => {
                                                     <div className="row align-items-center">
                                                         <div className="col-lg-8 col-md-8">
                                                             <div className="banner-content banner-content5 banner-content5-1 pt-10">
-                                                                <div className="banner-meta-text" data-animation="fadeInUp" data-delay=".3s">
+                                                                {/* <div className="banner-meta-text" data-animation="fadeInUp" data-delay=".3s">
                                                                     <span>{item.sliderSubtitle}</span>
-                                                                </div>
+                                                                </div> */}
                                                                 <h1 className="banner-title" data-animation="fadeInUp" data-delay=".5s">{item.sliderTitle}</h1>
                                                                 <div className="banner-btn" data-animation="fadeInUp" data-delay=".7s">
                                                                     <Link href="/contact"><a className="fill-btn">{item.sliderbtn}</a></Link>

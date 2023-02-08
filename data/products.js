@@ -1,8 +1,8 @@
 const productList = [
   {
     id:1,
-    productImg: '/assets/img/product/product-1.png',
-    productTitle: 'maranta lemon lime',
+    productImg: '/assets/img/product/cordyceps-mushrooms-liquid-culture (1).jpg',
+    productTitle: 'Cordyceps militaris Mushroom',
     cartIcon: 'fal fa-shopping-cart',
     cartEye: 'fal fa-eye',
     cartHeart: 'fal fa-heart',
@@ -16,8 +16,8 @@ const productList = [
   },
   {
     id:2,
-    productImg: '/assets/img/product/product-2.png',
-    productTitle: 'Seed Island',
+    productImg: '/assets/img/product/reishi-mushroom-growing-kit.jpg',
+    productTitle: 'Reishi Mushroom',
     cartIcon: 'fal fa-shopping-cart',
     cartEye: 'fal fa-eye',
     cartHeart: 'fal fa-heart',
@@ -31,8 +31,8 @@ const productList = [
   },
   {
     id:3,
-    productImg: '/assets/img/product/product-3.png',
-    productTitle: 'Botanic Heaven',
+    productImg: '/assets/img/product/turkey-tail-pores-1024x768 (1).jpg',
+    productTitle: 'Turkey Tail Mushroom',
     cartIcon: 'fal fa-shopping-cart',
     cartEye: 'fal fa-eye',
     cartHeart: 'fal fa-heart',
@@ -46,8 +46,8 @@ const productList = [
   },
   {
     id:4,
-    productImg: '/assets/img/product/product-4.png',
-    productTitle: 'Infinite Green',
+    productImg: '/assets/img/product/lions-mane-mushroom-1296x728-feature (1).webp',
+    productTitle: 'Lion\'s Mane Mushroom',
     cartIcon: 'fal fa-shopping-cart',
     cartEye: 'fal fa-eye',
     cartHeart: 'fal fa-heart',
@@ -61,8 +61,8 @@ const productList = [
   },
   {
     id:5,
-    productImg: '/assets/img/product/product-5.png',
-    productTitle: 'Golden Bloom',
+    productImg: '/assets/img/product/MAITAKEMUSHROOMS_FINE_WILDUK_grande (1).jpg',
+    productTitle: 'Maitake Mushroom',
     cartIcon: 'fal fa-shopping-cart',
     cartEye: 'fal fa-eye',
     cartHeart: 'fal fa-heart',
@@ -182,9 +182,9 @@ const productList = [
   //product page end here
   {
     id:13,
-    productImg: '/assets/img/category/category-t-1.jpg',
+    productImg: '/assets/img/category/cordyceps-mushrooms-liquid-culture.jpg',
     productSubTitle: 'in stock',
-    productTitle: 'qowli dow plants',
+    productTitle: 'cordyceps militaris mushroom',
     stock: '32',
   },
   {

@@ -24,7 +24,7 @@ const HeaderTopTwo = () => {
                                     <i className="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div className="meta-item-text">
-                                    <p><a href="#">12/A, New Booston Tower, NYC</a></p>
+                                    <p><a href="#">15552 Elginfield Rd Granton, ON N0M 1V0</a></p>
                                 </div>
                             </div>
                         </div>

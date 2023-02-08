@@ -11,7 +11,7 @@ const HeroSliderTwo = () => {
     const SliderItem = [
         {
             id: 1,
-            sliderBg: '/assets/img/banner/banner-2-1.jpg',
+            sliderBg: '/assets/img/banner/test.jpg',
             sliderSubtitle: `[ since from 2000 ]`,
             sliderTitle: 'Jik Flower Scaping',
             sliderDesc: 'The laying out and care of a plot of ground devoted partially or wholly to the growing of plants such as flowers.',
@@ -22,7 +22,7 @@ const HeroSliderTwo = () => {
         },
         {
             id: 2,
-            sliderBg: '/assets/img/banner/banner-4-1.jpg',
+            sliderBg: '/assets/img/banner/test2.jpg',
             sliderSubtitle: `[ since from 2000 ]`,
             sliderTitle: 'k.i Flower plants',
             sliderDesc: 'The laying out and care of a plot of ground devoted partially or wholly to the growing of plants such as flowers.',
@@ -33,7 +33,7 @@ const HeroSliderTwo = () => {
         },
         {
             id: 3,
-            sliderBg: '/assets/img/banner/banner-1-1.jpg',
+            sliderBg: '/assets/img/banner/test3.jpeg',
             sliderSubtitle: `[ since from 2000 ]`,
             sliderTitle: 'make dream gardening',
             sliderDesc: 'The laying out and care of a plot of ground devoted partially or wholly to the growing of plants such as flowers.',

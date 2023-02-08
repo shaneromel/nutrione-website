@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css/bundle';
 import productList from '../../../data/products';
+import { categories } from '../../../data/product-data';
 
 const ProductBanner = () => {
     return (
@@ -39,7 +40,7 @@ const ProductBanner = () => {
                                     }
                                 }}
                             >
-                                {productList.slice(12, 15).map((item, index) => {
+                                {categories.map((item, index) => {
                                     return (
                                         <SwiperSlide key={index}>
                                             <div className="swiper-slidess">

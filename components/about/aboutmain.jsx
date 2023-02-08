@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterOne from '../../layout/footers/footer';
 import HeaderOne from '../../layout/headers/header';
+import HeaderFive from '../../layout/headers/headerfive';
 import Breadcrumb from '../common/breadcrumb';
 import BrandSliderTwo from '../elements/brand/brand-slider-two';
 import AboutFeatureSection from './about-feature-section';
@@ -12,7 +13,7 @@ import AboutUsSection from './aboutus-section';
 const AboutMain = () => {
     return (
         <>
-            <HeaderOne />
+            <HeaderFive />
             <main>
                 <Breadcrumb breadTitle={'about us'} breadSubtitle={'Provides hassle-free backyard transformation'} breadHome={'Home'} breadMenu={'about us'} />
                 <AboutUsSection />

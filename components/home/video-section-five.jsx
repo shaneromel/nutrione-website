@@ -12,10 +12,10 @@ const VideoSectionFive = () => {
             <div className="container">
                 <div className="row wow fadeInUp" data-wow-delay=".3s">
                     <div className="col-lg-12">
-                        <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
+                        <ModalVideo channel='youtube' isOpen={isOpen} videoId='417Qbwn9yso' onClose={() => { openVideoModal(); }} />
                         <div className="video-wrapper">
                             <div className="video-thumb">
-                                <img src="/assets/img/bg/video-thumb.jpg" alt=""/>
+                                <img src="/assets/img/bg/417Qbwn9yso-HD (1).jpg" alt=""/>
                             </div>
                             <div className="video-btn mb-45">
                                 <span className="play-btn popup-video play-border-effect" onClick={() => { openVideoModal(); }}><i className="fas fa-play"></i></span>
