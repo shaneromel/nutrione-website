@@ -289,6 +289,14 @@ div.slider-pagination.slider1-pagination {
 }
 
 // banner-3 style
+
+.banner-area3 {
+	margin-top: -80px;
+	@media #{$md,$sm,$xs} {
+		margin-top: 0px;
+	}
+}
+
 .banner-bg3::after {
 	position: absolute;
 	content: "";

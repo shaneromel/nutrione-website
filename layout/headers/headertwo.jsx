@@ -99,14 +99,14 @@ const HeaderTwo = () => {
                                                 <NavMenu />
                                             </nav>
                                         </div>
-                                        <div className="header-search d-none d-xl-inline-block">
+                                        {/* <div className="header-search d-none d-xl-inline-block">
                                             <form action="#">
                                                 <div className="single-input-field field-search">
                                                     <input type="search" placeholder="Keyword here..." />
                                                     <button type="submit"><i className="fas fa-search"></i></button>
                                                 </div>
                                             </form>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="header-main-right header-main-right-header2">
                                         <div className="meta-item">

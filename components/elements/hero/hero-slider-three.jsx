@@ -15,25 +15,25 @@ const HeroSliderThree = () => {
     const SliderItem = [
         {
             id: 1,
-            sliderBg: '/assets/img/banner/banner-3-1.jpg',
+            sliderBg: '/assets/img/banner/cordyceps-banner.jpg',
             sliderSubtitle: 'since from 2000',
             sliderTitle: 'Jik Flower Scaping',
             sliderbtn: 'Get estimate',
         },
-        {
-            id: 2,
-            sliderBg: '/assets/img/banner/banner-4-1-dark.jpg',
-            sliderSubtitle: 'since from 2000',
-            sliderTitle: 'k.i Flower plants',
-            sliderbtn: 'Get estimate',
-        },
-        {
-            id: 3,
-            sliderBg: '/assets/img/banner/banner-1-1-dark.jpg',
-            sliderSubtitle: 'since from 2000',
-            sliderTitle: 'make dream gardening',
-            sliderbtn: 'Get estimate',
-        }
+        // {
+        //     id: 2,
+        //     sliderBg: '/assets/img/banner/banner-4-1-dark.jpg',
+        //     sliderSubtitle: 'since from 2000',
+        //     sliderTitle: 'k.i Flower plants',
+        //     sliderbtn: 'Get estimate',
+        // },
+        // {
+        //     id: 3,
+        //     sliderBg: '/assets/img/banner/banner-1-1-dark.jpg',
+        //     sliderSubtitle: 'since from 2000',
+        //     sliderTitle: 'make dream gardening',
+        //     sliderbtn: 'Get estimate',
+        // }
     ];
 
     return (
