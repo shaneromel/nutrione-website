@@ -32,7 +32,7 @@ footer {
 			content: "";
 			width: 30px;
 			height: 2px;
-			background: #2a7d2e;
+			background: white;
 			bottom: 0;
 			left: 0;
 		}
@@ -67,7 +67,17 @@ footer {
 		}
 	}
 	p {
-		color: #8ea89f;
+		color: white;
+	}
+}
+
+.social-links{
+	ul{
+		li{
+			a{
+				color: white !important;
+			}
+		}
 	}
 }
 
@@ -121,7 +131,7 @@ footer {
 		gap: 16px;
 		li {
 			a {
-				color: #689082;
+				color: white;
 				&:hover {
 					color: var(--clr-theme-2);
 				}
@@ -372,7 +382,7 @@ footer {
 	position: relative;
 	&:before {
 		position: absolute;
-		content: url("../../img/shape/plant-shape-big.png");
+		// content: url("../../img/shape/plant-shape-big.png");
 		top: 50%;
 		left: 0;
 		z-index: -1;
@@ -383,7 +393,7 @@ footer {
 	}
 	&:after {
 		position: absolute;
-		content: url("../../img/shape/plant-shape-big.png");
+		// content: url("../../img/shape/plant-shape-big.png");
 		top: 50%;
 		right: 0;
 		z-index: -1;

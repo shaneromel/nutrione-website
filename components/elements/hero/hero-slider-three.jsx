@@ -15,9 +15,9 @@ const HeroSliderThree = () => {
     const SliderItem = [
         {
             id: 1,
-            sliderBg: '/assets/img/banner/cordyceps-banner.jpg',
+            sliderBg: '/assets/img/banner/sudhir-banner.jpg',
             sliderSubtitle: 'since from 2000',
-            sliderTitle: 'Jik Flower Scaping',
+            sliderTitle: 'Supercharged Cordyceps',
             sliderbtn: 'Get estimate',
         },
         // {
@@ -58,7 +58,7 @@ const HeroSliderThree = () => {
                                     <div className="swiper-slidess">
                                         <div className="single-banner single-banner-3 banner-970 d-flex align-items-center pos-rel">
                                             <div className="banner-bg banner-bg3 banner-bg3-1" style={{ backgroundImage: `url(${item.sliderBg})` }}></div>
-                                            <div className="container pos-rel">
+                                            <div className="container pos-rel banner-container">
                                             <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
                                                 <div className="row justify-content-center">
                                                     <div className="col-lg-8 col-md-12">

@@ -34,7 +34,7 @@ const index = () => {
             <ProductSectionFive />
             <TeamIntroSection />
             {/* <ServiceSectionFive /> */}
-            <VideoSectionFive />
+            {/* <VideoSectionFive /> */}
             <ProductSliderFive />
             {/* <ClientsSectionFive />
             <InstagramSlider /> */}

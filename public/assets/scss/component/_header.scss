@@ -471,7 +471,7 @@ div.mean-container {
 	gap: 14px;
 	align-items: center;
 	.border-btn-rounded {
-		border-color: #18523e;
+		border-color: white;
 		color: var(--clr-common-white);
 		height: 50px;
 		line-height: 48px;
@@ -483,7 +483,7 @@ div.mean-container {
 		}
 	}
 	.action-btn {
-		border-color: #18523e;
+		border-color: white;
 		color: var(--clr-common-white);
 		&:hover {
 			color: var(--clr-common-white);
@@ -528,7 +528,7 @@ div.mean-container {
 	.meta-item-icon {
 		width: 50px;
 		height: 50px;
-		border: 1px solid #18523e;
+		border: 1px solid white;
 		border-radius: 50%;
 		text-align: center;
 		line-height: 50px;
